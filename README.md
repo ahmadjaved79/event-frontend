@@ -1,12 +1,44 @@
-# React + Vite
+# 🎨 Event Manager - Frontend (React + Vite + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of a full-stack Dynamic Event Management System built with **React**, **Vite**, **TailwindCSS**, and **Axios**.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Features
+- Responsive event listing grid
+- Admin panel to add/delete events
+- Axios-connected to backend API
+- Styled with TailwindCSS
+- Fully dynamic + real-time updates
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- React.js (Vite)
+- Tailwind CSS
+- React Router
+- Axios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## 🚀 Getting Started Locally
+
+```bash
+git clone https://github.com/YOUR_USERNAME/event-frontend.git
+cd event-frontend
+npm install
+npm run dev
+Access it at: http://localhost:5173/events
+
+🧠 Folder Structure
+css
+Copy
+Edit
+src/
+├── components/
+│   └── EventCard.jsx
+├── pages/
+│   ├── EventsPage.jsx
+│   └── AdminPage.jsx
+├── App.jsx
+└── index.css
+
+✍️ Author
+Ahmad Javed Shaik
