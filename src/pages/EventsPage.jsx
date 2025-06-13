@@ -5,7 +5,7 @@ function EventsPage() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/events").then((res) => {
+    axios.get("https://event-backend-vaxm.onrender.com/api/events").then((res) => {
       setEvents(res.data);
     });
   }, []);

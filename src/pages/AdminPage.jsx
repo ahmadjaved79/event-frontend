@@ -12,20 +12,20 @@ function AdminPage() {
   const [events, setEvents] = useState([]);
 
   const fetchEvents = () => {
-    axios.get("http://localhost:5000/api/events").then((res) => setEvents(res.data));
+    axios.get("https://event-backend-vaxm.onrender.com/api/events").then((res) => setEvents(res.data));
   };
 
   useEffect(() => { fetchEvents(); }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/events", form);
+    await axios.post("https://event-backend-vaxm.onrender.com/api/events", form);
     setForm({ title: "", description: "", date: "", location: "", image: "" });
     fetchEvents();
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/api/events/${id}`);
+    await axios.delete(`https://event-backend-vaxm.onrender.com/api/events/${id}`);
     fetchEvents();
   };
 
