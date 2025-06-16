@@ -1,0 +1,96 @@
+/* Light Theme */
+body {
+  background-color: #f9f5f0;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Universal styles */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0057b7;
+}
+
+body.dark h1 {
+  color: #00bfff;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+button {
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .toggle-btn {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.nav-btn {
+  background-color: #0057b7;
+  color: #fff;
+}
+
+.nav-btn:hover {
+  background-color: #003f8a;
+}
+
+body.dark .nav-btn {
+  background-color: #00bfff;
+  color: #000;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
